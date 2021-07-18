@@ -1,0 +1,38 @@
+name: Plumbus
+
+settingGroups:
+  app:
+    base:
+      APP_NAME: Plumbus
+      PRODUCT_NAME: Plumbus
+      PRODUCT_BUNDLE_IDENTIFIER: com.redspace.plumbus
+      CODE_SIGN_STYLE: Automatic
+      VERSION_SHORT: 1.0.0
+      VERSION_LONG: 1.0.0
+
+packages:
+  RickMortySwiftApi:
+    url: https://github.com/benjaminbruch/Rick-and-Morty-Swift-API
+    branch: main
+
+targets:
+  Plumbus:
+    sources:
+      - Sources
+    platform: iOS
+    deploymentTarget: "14.0"
+    type: application
+    scheme:
+      environmentVariables:
+          - variable: OS_ACTIVITY_MODE
+            value: disable
+            isEnabled: false
+    settings:
+      groups: [app]
+    requiresObjCLinking: true
+    dependencies:
+      - framework: "Carthage/Build/Kingfisher.xcframework"
+      - package: RickMortySwiftApi
+    postBuildScripts:
+      - name: Format Code
+        script: scripts/format-code.sh Sources

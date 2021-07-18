@@ -1,0 +1,25 @@
+/* 
+  Strings.strings
+  Plumbus
+
+  Created by Alexander Zhigulich on 17.07.21.
+  
+*/
+
+"episodes.title" = "Episodes";
+"episodes.search.placeholder" = "e.g. Pilot";
+"episodes.search.fail" = "No episodes for '%@'";
+
+"characters.title" = "Characters";
+"characters.search.placeholder" = "e.g. Rick";
+"characters.search.fail" = "No characters for '%@'";
+"characters.details.name" = "Name";
+"characters.details.status" = "Status";
+"characters.details.status.alive" = "Alive";
+"characters.details.status.deceased" = "Deceased";
+"characters.details.status.unknown" = "Unknown";
+"characters.details.species" = "Species";
+"characters.details.type" = "Type";
+"characters.details.gender" = "Gender";
+"characters.details.originLocationName" = "Origin: ⓘ";
+"characters.details.lastseenLocationName" = "Lastseen at: ⓘ";
