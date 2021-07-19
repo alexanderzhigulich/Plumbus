@@ -27,5 +27,9 @@ protocol RMFetchable {
         andName name: String
     ) -> AnyPublisher<[RMCharacterModel], Error>
 
+    /// Fetches location by url
+    /// - parameters:
+    ///     - url: direct url to location info
+    /// - returns: erased and not completed publisher
     func location(byUrl url: String) -> AnyPublisher<RMLocationModel, Error>
 }
