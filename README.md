@@ -1,3 +1,5 @@
+# Time spent **14h**
+
 # Plumbus
 **Release 1.0.0**
 Deployment target iOS: **14.0**
